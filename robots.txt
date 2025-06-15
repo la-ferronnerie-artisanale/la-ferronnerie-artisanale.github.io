@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /*?m=1
-Allow: /
-Sitemap: https://portail-ferforge.blogspot.com/sitemap.xml
-Sitemap: https://portail-ferforge.blogspot.com/sitemap-pages.xml
