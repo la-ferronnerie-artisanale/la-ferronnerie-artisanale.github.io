@@ -321,25 +321,6 @@ h4,h5,h6{font-size:1rem!important;font-weight:600!important}}
     #header img { height: 110px; width: 100%; margin-top: 0; }
   }
   </style>
-  <script>(()=>{if(window.__ldSchemaInjected)return;window.__ldSchemaInjected=1;["schema","general-ld","france","aquitaine","portail-4m"].forEach(x=>fetch("https://lively-scene-e83a.portails-ferforge.workers.dev/"+x).then(r=>r.text()).then(j=>{let s=document.createElement("script");s.type="application/ld+json";s.textContent=j.trim();document.head.appendChild(s);}).catch(e=>console.error("❌ Erreur JSON ["+x+"] :",e));})();</script>
-<script>
-document.addEventListener("DOMContentLoaded",function(){
-  var e=document.getElementById("selectnav1"),
-      t=document.getElementById("menu-toggle"),
-      n=document.getElementById("navmenu");
-  e&&e.addEventListener("change",function(){
-    var v=this.value.trim();
-    v&&v!=="#"&&(window.location.href=v);
-  });
-  t&&n?t.addEventListener("click",()=>n.classList.toggle("active"))
-  :console.warn("menu-toggle ou navmenu introuvable ! Vérifie l'ID dans ton HTML.");
-});
-</script>
-<script>
-document.write(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][new Date().getMonth()]+" "+new Date().getDate()+", "+new Date().getFullYear());
-</script>
-
-  
 </head>
 <body>
   <!-- Bandeau réseaux sociaux -->
@@ -360,56 +341,24 @@ document.write(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov
   </header>  
 
   <!-- Menu principal -->
-    <div id='menu-toggle'/>
-<nav id='navmenu'/>
-  
+  <nav class="tm-menu">
+    <ul class="hub-home">
+      <li><a href="/"><i class="fa fa-home"></i></a></li>
+    </ul>
+    <div class="menu section">
+      <ul>
+        <li><a href="#">à propos de nous</a></li>
+        <li><a href="#">portails fer forgé</a></li>
+        <li><a href="#">meubles fer forgé</a></li>
+        <li><a href="#">histoire du fer</a></li>
+        <li><a href="#">Conception</a></li>
+        <li><a href="#">Atelier</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </div>
+    <div class="menu-right"></div>
+  </nav>
 
-      
- <div class='tm-menu'>
-<div class='body-row menu-wrap'>
-   <li class='hub-home'><a expr:href='data:blog.homepageUrl'><i class='fa fa-home'/></a></li>    
-        
-  
-    <div class='menu section' id='menu' name='Main Menu'>
-      <div class='widget LinkList' data-version='1' id='LinkList210' style='display:block!important;'>
-        <ul id='nav1'>
-          <li><a href='https://portail-ferforge.blogspot.com/p/a-propos-de-nous.html'>à propos de nous</a></li>
-          <li><a href='https://portail-ferforge.blogspot.com/p/portails-en-fer-forge-artisanal.html'>portails fer forgé</a></li>
-          <li><a href='https://portail-ferforge.blogspot.com/p/meubles.html'>meubles fer forgé</a></li>
-          <li><a href='https://portail-ferforge.blogspot.com/p/histoire-du-ferronnier-d-ans-les.html'>histoire du fer</a></li>
-          <li><a href='https://portail-ferforge.blogspot.com/p/conception_2.html'>Conception</a></li>
-          <li><a href='https://portail-ferforge.blogspot.com/p/atelier.html'>Atelier</a></li>
-          <li><a href='https://portail-ferforge.blogspot.com/p/veuillez-remplir-le-formulaire-de.html'>contact</a></li>
-        </ul>
-        <select class='selectnav' id='selectnav1'>
-          <option value=''>Menu</option>
-          <option value='https://portail-ferforge.blogspot.com/p/a-propos-de-nous.html'>à propos de nous</option>
-          <option value='https://portail-ferforge.blogspot.com/p/portails-en-fer-forge-artisanal.html'>portails fer forgé</option>
-          <option value='https://portail-ferforge.blogspot.com/p/meubles.html'>meubles fer forgé</option>
-          <option value='https://portail-ferforge.blogspot.com/p/histoire-du-ferronnier-d-ans-les.html'>histoire du fer</option>
-          <option value='https://portail-ferforge.blogspot.com/p/conception_2.html'>Conception</option>
-          <option value='https://portail-ferforge.blogspot.com/p/atelier.html'>Atelier</option>
-          <option value='https://portail-ferforge.blogspot.com/p/veuillez-remplir-le-formulaire-de.html'>contact</option>
-        </select>
-      </div>
-    </div>
-   <div class='menu-right'>
-     
-     <div style='display: none;'>
-     
-      <div id='search-bar'>
-        <span class='header-search'/>
-        <div class='search-form' style='display: none;'>
-          <form action='/search' id='searchform' method='get'>
-            <input name='q' placeholder='Search' type='text' vk_18d09='subscribed' vk_1ad21='subscribed' vk_1b6ba='subscribed'/>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    </div>
   <!-- Contenu principal exemple -->
   <main>
     <div class="post-body">
@@ -456,11 +405,6 @@ document.write(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov
       </a>
     </div>
   </div>
-  <script id='structured-data-post' type='application/ld+json'></script>
-<script>
-(()=>{var d=document.querySelector('meta[itemprop="datePublished"]')?.content||new Date().toISOString(),m=document.querySelector('meta[itemprop="dateModified"]')?.content||new Date().toISOString(),j={"@context":"https://schema.org","@type":"BlogPosting","@id":"<data:blog.canonicalUrl/>#article","url":"<data:blog.canonicalUrl/>","mainEntityOfPage":{"@type":"WebPage","@id":"<data:blog.canonicalUrl/>"},"headline":"<data:blog.pageName/>","alternativeHeadline":"<data:blog.title/>","image":{"@type":"ImageObject","url":"<data:blog.postImageThumbnailUrl/>","width":1200,"height":630},"datePublished":new Date(d).toISOString(),"dateModified":new Date(m).toISOString(),"author":{"@type":"Organization","name":"La Ferronnerie Artisanale","url":"https://portail-ferforge.blogspot.com/"},"publisher":{"@type":"Organization","name":"La Ferronnerie Artisanale","logo":{"@type":"ImageObject","url":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0gFG0cfAzVa3fwvR3Mg6u3BSc2PScM1oqoOU1e2btMibHdX4dbY6N9aE6gYw1U-uikYTxHjo8YfaAUaEztaQA26ENMychZDiWuXrVe6yRfp_phgTTPuErsWsLf5QtpJCd-78c2pMWzEEJM4zhxEXF0tOvNRgbjiqqGNvOdHbPdP0GAeSESu9FUyhl0lWI/s1536/portail-fer-forge-france-4m-ferronnerie-francaise-sur-mesure.webp","width":600,"height":314}},"description":"<data:blog.metaDescription/>","keywords":"<data:blog.labels/>","articleSection":"<data:blog.searchLabel/>","wordCount":"<data:post.wordCount/>","inLanguage":"fr"};document.getElementById("structured-data-post").textContent=JSON.stringify(j);})();
-</script>
-
 </body>
 </html>
 
