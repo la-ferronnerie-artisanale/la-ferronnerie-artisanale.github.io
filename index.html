@@ -30,20 +30,13 @@
   if (window.__ldSchemaInjected) return;
   window.__ldSchemaInjected = true;
 
-  const paths = [
-    "schema",
-    "general-ld",
-    "france",
-    "aquitaine",
-    "portail-4m"
-  ];
+  const paths = ["schema", "general-ld", "france", "aquitaine", "portail-4m"];
   const base = "https://lively-scene-e83a.portails-ferforge.workers.dev/";
 
   paths.forEach(path => {
-    const url = `${base}${path}`;
-    fetch(url)
+    fetch(`${base}${path}`)
       .then(res => {
-        if (!res.ok) throw new Error(`Réponse ${res.status} pour ${path}`);
+        if (!res.ok) throw new Error(`Bot-only route`);
         return res.text();
       })
       .then(json => {
@@ -51,12 +44,23 @@
         script.type = "application/ld+json";
         script.textContent = json.trim();
         document.head.appendChild(script);
-        console.log(`✅ Injecté : ${path}`);
       })
-      .catch(err => console.error(`❌ Erreur JSON [${path}] :`, err));
+      .catch(() => {
+        console.warn(`⚠️ Fallback local pour ${path}`);
+        const fallback = {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Fallback - " + path
+        };
+        const script = document.createElement("script");
+        script.type = "application/ld+json";
+        script.textContent = JSON.stringify(fallback);
+        document.head.appendChild(script);
+      });
   });
 })();
 </script>
+
 
 </head>
 <body>
@@ -779,6 +783,7 @@ Côté budget, nos fabrications artisanales affichent un excellent rapport quali
 
 </body>
 </html>
+
 
 
 
