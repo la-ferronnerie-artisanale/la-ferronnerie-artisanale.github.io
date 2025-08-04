@@ -14,7 +14,6 @@
   <meta name="msapplication-TileImage" content="/images/favico/favicon-32x32.png"/>
   <meta name="mobile-web-app-capable" content="yes"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
-  
   <!-- Favicon et manifest -->
   <link rel="icon" href="https://raw.githubusercontent.com/portailferforge/favicons-portails/main/favicon-16x16.png" sizes="16x16" type="image/png"/>
   <link rel="icon" href="https://raw.githubusercontent.com/portailferforge/favicons-portails/main/favicon-32x32.png" sizes="32x32" type="image/png"/>
@@ -78,12 +77,12 @@
   </div>
   <!-- En-tête principal avec image -->
   <header id="header">
-    <img alt="Bannière du blog" src="https://blogger.googleusercontent.com/img/a/AVvXsEgegIsSR27iLWajTRawQW5rWTmyuTy2r1SU1cNwtOd646gWm2WRFFphIHmPxyhNpvNRtYTepI123PhLVA3V7OzvMwc4hbhOzEvKfrwa-icFM66NjmEiYT7BikkYmONXTarjgorzvMt2i3q13BJ_LntNBxvNDvGExgWkPycinVXcSKjpKVupOtZV9j9MYLkK" width="1170px"/>
-  </header>   
-<nav id='navmenu'>
-  <div class='tm-menu'>
-    <div class='body-row menu-wrap'>
-      <div class='menu section' id='menu'>
+    <img alt="Bannière du blog" src="https://blogger.googleusercontent.com/img/a/AVvXsEgegIsSR27iLWajTRawQW5rWTmyuTy2r1SU1cNwtOd646gWm2WRFFphIHmPxyhNpvNRtYTepI123PhLVA3V7OzvMwc4hbhOzEvKfrwa-icFM66NjmEiYT7BikkYmONXTarjgorzvMt2i3q13BJ_LntNBxvNDvGExgWkPycinVXcSKjpKVupOtZV9j9MYLkK" width="1170" />
+  </header>
+  <nav id='navmenu'>
+    <div class='tm-menu'>
+      <div class='body-row menu-wrap'>
+        <div class='menu section' id='menu'>
           <ul id='nav1'>
             <li class="hub-home">
               <a href="https://la-ferronnerie-artisanale.github.io/realisation-sur-mesure/">
@@ -98,8 +97,8 @@
             <li><a href='https://portail-ferforge.blogspot.com/p/atelier.html'>Atelier</a></li>
             <li><a href='https://portail-ferforge.blogspot.com/p/veuillez-remplir-le-formulaire-de.html'>contact</a></li>
           </ul>
-          <div id='menu-toggle'></div>
-          <select class='selectnav' id='selectnav1'>
+          <div id='menu-toggle' aria-label="Ouvrir le menu" tabindex="0"></div>
+          <select class='selectnav' id='selectnav1' aria-label="Menu de navigation">
             <option value=''>Menu</option>
             <option value='https://portail-ferforge.blogspot.com/p/a-propos-de-nous.html'>à propos de nous</option>
             <option value='https://portail-ferforge.blogspot.com/p/portails-en-fer-forge-artisanal.html'>portails fer forgé</option>
@@ -122,16 +121,23 @@
         </div>
       </div>
     </div>
-</nav>
-<script>
-  document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("selectnav1"),t=document.getElementById("menu-toggle"),n=document.getElementById("navmenu");e&&e.addEventListener("change",function(){var e=this.value.trim();e&&e!=="#"&&(window.location.href=e)});t&&n?t.addEventListener("click",function(){n.classList.toggle("active")}):console.warn("menu-toggle ou navmenu introuvable ! Vérifie l'ID dans ton HTML.")});
-</script>
-
-
-  <!-- Contenu principal exemple -->
+  </nav>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var e = document.getElementById("selectnav1"),
+          t = document.getElementById("menu-toggle"),
+          n = document.getElementById("navmenu");
+      e && e.addEventListener("change", function () {
+        var e = this.value.trim();
+        e && e !== "#" && (window.location.href = e)
+      });
+      t && n ? t.addEventListener("click", function () {
+        n.classList.toggle("active")
+      }) : console.warn("menu-toggle ou navmenu introuvable ! Vérifie l'ID dans ton HTML.");
+    });
+  </script>
   <main>
     <div class="post-body">
-  
   <main>
  <h1>Portails en Fer Forgé Sur Mesure – Élégance Artisanale</h1>
 
@@ -711,47 +717,60 @@ Côté budget, nos fabrications artisanales affichent un excellent rapport quali
        </div>    
 </div>
 
-  </main>
-
-<script>document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("selectnav1"),t=document.getElementById("menu-toggle"),n=document.getElementById("navmenu");e&&e.addEventListener("change",function(){var e=this.value.trim();e&&e!=="#"&&(window.location.href=e)});t&&n?t.addEventListener("click",function(){n.classList.toggle("active")}):console.warn("menu-toggle ou navmenu introuvable ! Vérifie l'ID dans ton HTML.")});</script>
-
- <script>
-  var d = new Date();
-  var monthname = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  document.write(monthname[d.getMonth()] + " ");
-  document.write(d.getDate() + ", ");
-  document.write(d.getFullYear());
-</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","url":"https://portailferforge.github.io/la-ferronnerie-artisanale.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://portailferforge.github.io/la-ferronnerie-artisanale.html"},"headline":"La Ferronnerie Artisanale","alternativeHeadline":"Portail Fer Forge","image":{"@type":"ImageObject","url":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0gFG0cfAzVa3fwvR3Mg6u3BSc2PScM1oqoOU1e2btMibHdX4dbY6N9aE6gYw1U-uikYTxHjo8YfaAUaEztaQA26ENMychZDiWuXrVe6yRfp_phgTTPuErsWsLf5QtpJCd-78c2pMWzEEJM4zhxEXF0tOvNRgbjiqqGNvOdHbPdP0GAeSESu9FUyhl0lWI/s1536/portail-fer-forge-france-4m-ferronnerie-francaise-sur-mesure.webp","width":1200,"height":630},"datePublished":"2025-08-02T21:55:00+01:00","dateModified":"2025-08-02T21:55:00+01:00","author":{"@type":"Organization","name":"La Ferronnerie Artisanale","url":"https://portailferforge.github.io/"},"publisher":{"@type":"Organization","name":"La Ferronnerie Artisanale","logo":{"@type":"ImageObject","url":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0gFG0cfAzVa3fwvR3Mg6u3BSc2PScM1oqoOU1e2btMibHdX4dbY6N9aE6gYw1U-uikYTxHjo8YfaAUaEztaQA26ENMychZDiWuXrVe6yRfp_phgTTPuErsWsLf5QtpJCd-78c2pMWzEEJM4zhxEXF0tOvNRgbjiqqGNvOdHbPdP0GAeSESu9FUyhl0lWI/s1536/portail-fer-forge-france-4m-ferronnerie-francaise-sur-mesure.webp","width":600,"height":314}},"description":"Découvrez Portail Fer Forge, spécialiste de la ferronnerie artisanale. Création sur mesure de portails, rampes et décorations en fer forgé.","keywords":["fer forgé","portail","artisanat","grille","rampe","décoration"],"articleSection":"Ferronnerie","wordCount":500,"inLanguage":"fr"}</script>
-
-<div class="notif-whatsapp">
-  <div class="icon">
-    <a href="https://api.whatsapp.com/send?phone=+21623035078" target="_blank">
-      <i class="fa fa-whatsapp fa_custom fa-2x"></i>
-    </a>
-  </div>
-</div>
-  <div id="footer-divider">
-    <div class="stripe stripe-red"></div>
-    <div class="stripe stripe-white"></div>
-    <div class="stripe stripe-green"></div>
-    <div class="stripe stripe-white"></div>
-  </div>
-  <details>
-  <div style="text-align:center; padding:15px; background:#f8f8f8; border-top:3px solid #222;">
-    <p style="color:#222;">&#9884;&#65039; Portails en Fer Forgé - Artisanat d’Exception 💎</p>
-    <p style="font-size:16px; color:#444;">🔨 Faits main • <strong>Sur mesure</strong> • Élégance et robustesse</p>
-    <p style="font-size:14px; color:#666;">📍 Disponible en <strong>.....</strong> 🇫🇷 • Livraison sur toute la France et ailleurs</p>
-    <p style="font-size:15px; color:#333; margin-top:10px;">
-       <a href="https://portail-ferforge.blogspot.com/" style="color:#0077cc; font-weight:bold;">Découvrez nos créations uniques</a>
-    </p>
-    <p style="font-size:14px; color:#555; margin-bottom:5px;">📩 <a href="mailto:portail.artisanal@gmail.com" style="color:#cc0000; font-weight:bold;">Contactez-nous</a></p>
-  </div>
-</details>
-  <!-- Pied de page -->
-  <footer>
-    <p>&#169; 2025 La Ferronnerie Artisanale. Tous droits réservés.</p>
-  </footer>
+    </main>
+  <script>
+    var d = new Date();
+    var monthname = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    document.getElementById('date').textContent = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "url": "https://portailferforge.github.io/la-ferronnerie-artisanale.html",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://portailferforge.github.io/la-ferronnerie-artisanale.html"
+      },
+      "headline": "La Ferronnerie Artisanale",
+      "alternativeHeadline": "Portail Fer Forge",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0gFG0cfAzVa3fwvR3Mg6u3BSc2PScM1oqoOU1e2btMibHdX4dbY6N9aE6gYw1U-uikYTxHjo8YfaAUaEztaQA26ENMychZDiWuXrVe6yRfp_phgTTPuErsWsLf5QtpJCd-78c2pMWzEEJM4zhxEXF0tOvNRgbjiqqGNvOdHbPdP0GAeSESu9FUyhl0lWI/s1536/portail-fer-forge-france-4m-ferronnerie-francaise-sur-mesure.webp",
+        "width": 1200,
+        "height": 630
+      },
+      "datePublished": "2025-08-02T21:55:00+01:00",
+      "dateModified": "2025-08-02T21:55:00+01:00",
+      "author": {
+        "@type": "Organization",
+        "name": "La Ferronnerie Artisanale",
+        "url": "https://portailferforge.github.io/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "La Ferronnerie Artisanale",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0gFG0cfAzVa3fwvR3Mg6u3BSc2PScM1oqoOU1e2btMibHdX4dbY6N9aE6gYw1U-uikYTxHjo8YfaAUaEztaQA26ENMychZDiWuXrVe6yRfp_phgTTPuErsWsLf5QtpJCd-78c2pMWzEEJM4zhxEXF0tOvNRgbjiqqGNvOdHbPdP0GAeSESu9FUyhl0lWI/s1536/portail-fer-forge-france-4m-ferronnerie-francaise-sur-mesure.webp",
+          "width": 600,
+          "height": 314
+        }
+      },
+      "description": "Découvrez Portail Fer Forge, spécialiste de la ferronnerie artisanale. Création sur mesure de portails, rampes et décorations en fer forgé.",
+      "keywords": [
+        "fer forgé",
+        "portail",
+        "artisanat",
+        "grille",
+        "rampe",
+        "décoration"
+      ],
+      "articleSection": "Ferronnerie",
+      "wordCount": 500,
+      "inLanguage": "fr"
+    }
+  </script>
   <div class="notif-whatsapp">
     <div class="icon">
       <a href="https://api.whatsapp.com/send?phone=+21623035078" target="_blank">
@@ -759,5 +778,27 @@ Côté budget, nos fabrications artisanales affichent un excellent rapport quali
       </a>
     </div>
   </div>
+  <div id="footer-divider">
+    <div class="stripe stripe-red"></div>
+    <div class="stripe stripe-white"></div>
+    <div class="stripe stripe-green"></div>
+    <div class="stripe stripe-white"></div>
+  </div>
+  <details>
+    <summary>À propos de nos portails en fer forgé</summary>
+    <div style="text-align:center; padding:15px; background:#f8f8f8; border-top:3px solid #222;">
+      <p style="color:#222;">&#9884;&#65039; Portails en Fer Forgé - Artisanat d’Exception 💎</p>
+      <p style="font-size:16px; color:#444;">🔨 Faits main • <strong>Sur mesure</strong> • Élégance et robustesse</p>
+      <p style="font-size:14px; color:#666;">📍 Disponible en <strong>.....</strong> 🇫🇷 • Livraison sur toute la France et ailleurs</p>
+      <p style="font-size:15px; color:#333; margin-top:10px;">
+        <a href="https://portail-ferforge.blogspot.com/" style="color:#0077cc; font-weight:bold;">Découvrez nos créations uniques</a>
+      </p>
+      <p style="font-size:14px; color:#555; margin-bottom:5px;">📩 <a href="mailto:portail.artisanal@gmail.com" style="color:#cc0000; font-weight:bold;">Contactez-nous</a></p>
+    </div>
+  </details>
+  <!-- Pied de page -->
+  <footer>
+    <p>&#169; 2025 La Ferronnerie Artisanale. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
