@@ -1,15 +1,30 @@
 {
-  "name": "La Ferronnerie Artisanale",
-  "short_name": "Ferronnerie",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#333333",
-  "icons": [
-    {
-      "src": "/images/favicon.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    }
-  ]
+    "name": "réalisation sur mesure",
+    "short_name": "portail fer forgé",
+    "description": "Fabrication artisanale en France de portails, grilles et clôtures en fer forgé sur mesure – qualité haut de gamme, design intemporel, livraison partout en France.",
+    "start_url": "/?utm_source=pwa",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1f1f1f",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "https://la-ferronnerie-artisanale.github.io/realisation-sur-mesure/favicon-48x48.ico",
+            "sizes": "48x48",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "https://la-ferronnerie-artisanale.github.io/realisation-sur-mesure/favicon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://la-ferronnerie-artisanale.github.io/realisation-sur-mesure/favicon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "lang": "fr",
+    "scope": "/",
+    "id": "/manifest.json"
 }
