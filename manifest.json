@@ -2,7 +2,7 @@
     "name": "réalisation sur mesure",
     "short_name": "portail fer forgé",
     "description": "Fabrication artisanale en France de portails, grilles et clôtures en fer forgé sur mesure – qualité haut de gamme, design intemporel, livraison partout en France.",
-    "start_url": "/?utm_source=pwa",
+    "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#1f1f1f",
