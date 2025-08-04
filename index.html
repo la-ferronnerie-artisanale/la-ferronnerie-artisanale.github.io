@@ -611,12 +611,6 @@ Côté budget, nos fabrications artisanales affichent un excellent rapport quali
    </div>
       </div>
     </main>
-  
-  <script>
-    var d = new Date();
-    var monthname = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    document.getElementById('date').textContent = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
-  </script>
   <div class="notif-whatsapp">
     <div class="icon">
       <a href="https://api.whatsapp.com/send?phone=+21623035078" target="_blank">
@@ -634,6 +628,17 @@ Côté budget, nos fabrications artisanales affichent un excellent rapport quali
   <footer>
     <p>&#169; 2025 La Ferronnerie Artisanale. Tous droits réservés.</p>
   </footer>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  var d = new Date();
+  var monthname = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  var dateElem = document.getElementById('date');
+  if (dateElem) {
+    dateElem.textContent = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+  }
+});
+</script>
 </body>
 </html>
+
 
