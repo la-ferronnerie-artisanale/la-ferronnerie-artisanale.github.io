@@ -684,9 +684,6 @@ Côté budget, nos fabrications artisanales affichent un excellent rapport quali
 </div>
 
   </main>
-  
-
-<script>(function injectLdSchemasOnce(){if(window.__ldSchemaInjected)return;window.__ldSchemaInjected=true;const paths=["schema","general-ld","france","aquitaine","portail-4m"],base="https://lively-scene-e83a.portails-ferforge.workers.dev/";paths.forEach(path=>{fetch(`${base}${path}`).then(res=>res.text()).then(json=>{const script=document.createElement("script");script.type="application/ld+json";script.textContent=json.trim();document.head.appendChild(script)}).catch(err=>console.error(`❌ Erreur JSON [${path}] :`,err))})})();</script>
 
 <script>document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("selectnav1"),t=document.getElementById("menu-toggle"),n=document.getElementById("navmenu");e&&e.addEventListener("change",function(){var e=this.value.trim();e&&e!=="#"&&(window.location.href=e)});t&&n?t.addEventListener("click",function(){n.classList.toggle("active")}):console.warn("menu-toggle ou navmenu introuvable ! Vérifie l'ID dans ton HTML.")});</script>
 
@@ -734,7 +731,28 @@ Côté budget, nos fabrications artisanales affichent un excellent rapport quali
       </a>
     </div>
   </div>
+<script id="structured-data-post" type="application/ld+json"></script>
+<script>
+(function(){
+  var d=document.querySelector('meta[itemprop="datePublished"]')?.content||new Date().toISOString(),
+      m=document.querySelector('meta[itemprop="dateModified"]')?.content||new Date().toISOString(),
+      jsonLD={
+        "@context":"https://schema.org","@type":"BlogPosting","@id":"<data:blog.canonicalUrl/>#article",
+        "url":"<data:blog.canonicalUrl/>","mainEntityOfPage":{"@type":"WebPage","@id":"<data:blog.canonicalUrl/>"},
+        "headline":"<data:blog.pageName/>","alternativeHeadline":"<data:blog.title/>",
+        "image":{"@type":"ImageObject","url":"<data:blog.postImageThumbnailUrl/>","width":1200,"height":630},
+        "datePublished":new Date(d).toISOString(),"dateModified":new Date(m).toISOString(),
+        "author":{"@type":"Organization","name":"La Ferronnerie Artisanale","url":"https://portail-ferforge.blogspot.com/"},
+        "publisher":{"@type":"Organization","name":"La Ferronnerie Artisanale",
+        "logo":{"@type":"ImageObject","url":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0gFG0cfAzVa3fwvR3Mg6u3BSc2PScM1oqoOU1e2btMibHdX4dbY6N9aE6gYw1U-uikYTxHjo8YfaAUaEztaQA26ENMychZDiWuXrVe6yRfp_phgTTPuErsWsLf5QtpJCd-78c2pMWzEEJM4zhxEXF0tOvNRgbjiqqGNvOdHbPdP0GAeSESu9FUyhl0lWI/s1536/portail-fer-forge-france-4m-ferronnerie-francaise-sur-mesure.webp","width":600,"height":314}},
+        "description":"<data:blog.metaDescription/>","keywords":"<data:blog.labels/>",
+        "articleSection":"<data:blog.searchLabel/>","wordCount":"<data:post.wordCount/>","inLanguage":"fr"
+      };
+  document.getElementById("structured-data-post").textContent=JSON.stringify(jsonLD);
+})();
+</script>
 
 </body>
 </html>
+
 
