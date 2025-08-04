@@ -1,26 +1,15 @@
 {
-  "name": "Portail Fer Forgé",
-  "short_name": "FerForgé",
-  "description": "Fabrication artisanale en France de portails, grilles et clôtures en fer forgé.",
-  "start_url": "/index.html",
-  "scope": "/",
+  "name": "La Ferronnerie Artisanale",
+  "short_name": "Ferronnerie",
+  "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#1f1f1f",
-  "theme_color": "#1f1f1f",
-  "lang": "fr-FR",
-  "dir": "ltr",
+  "background_color": "#ffffff",
+  "theme_color": "#333333",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/portailferforge/favicons-portails/main/favicon-192x192.png",
+      "src": "/images/favicon.png",
       "sizes": "192x192",
       "type": "image/png"
-    },
-    {
-      "src": "https://raw.githubusercontent.com/portailferforge/favicons-portails/main/favicon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
     }
-  ],
-  "prefer_related_applications": false
+  ]
 }
