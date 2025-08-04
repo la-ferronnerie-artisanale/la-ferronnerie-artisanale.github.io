@@ -25,43 +25,6 @@
 <link rel="manifest" href="https://la-ferronnerie-artisanale.github.io/realisation-sur-mesure/manifest.json">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <link href='https://cdn.jsdelivr.net/gh/la-ferronnerie-artisanale/mon-style-css/Yasmin.css' rel='stylesheet'/>
-<script>
-(function injectLdSchemasOnce() {
-  if (window.__ldSchemaInjected) return;
-  window.__ldSchemaInjected = true;
-
-  const paths = ["schema", "general-ld", "france", "aquitaine", "portail-4m"];
-  const base = "https://lively-scene-e83a.portails-ferforge.workers.dev/";
-
-  paths.forEach(path => {
-    fetch(`${base}${path}`)
-      .then(res => {
-        if (!res.ok) throw new Error(`Bot-only route`);
-        return res.text();
-      })
-      .then(json => {
-        const script = document.createElement("script");
-        script.type = "application/ld+json";
-        script.textContent = json.trim();
-        document.head.appendChild(script);
-      })
-      .catch(() => {
-        console.warn(`⚠️ Fallback local pour ${path}`);
-        const fallback = {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": "Fallback - " + path
-        };
-        const script = document.createElement("script");
-        script.type = "application/ld+json";
-        script.textContent = JSON.stringify(fallback);
-        document.head.appendChild(script);
-      });
-  });
-})();
-</script>
-
-
 </head>
 <body>
   <!-- Bandeau réseaux sociaux -->
@@ -705,71 +668,20 @@ Notre entreprise intervient dans toute la France, y compris en Corse. Nous couvr
 Côté budget, nos fabrications artisanales affichent un excellent rapport qualité-prix. Comptez entre <strong>85 € et 320 €</strong> le m² selon la complexité, les options et le type de finition. Les projets complets se situent généralement entre <strong>1100 € et 4800 €</strong>. Contactez-nous pour une estimation gratuite et personnalisée selon votre plan et vos attentes.
 </p>
 </details>
-
   </div>
-
     <br>  
   <div style="text-align: center;">
     <a href="https://portail-ferforge.blogspot.com/p/atelier.html" rel="noopener noreferrer" target="_blank" title="Cliquez pour agrandir : Portail en Fer Forgé Modèle Normandie avec Soubassement ajouré chapeau gendarme">
         <img alt="Portail - Fer Forgé - Occitanie - 2 battants - 4m -" loading="lazy" src="https://portailsferforge.wordpress.com/wp-content/uploads/2025/03/portail-fer-forge-fr.jpg?w=1024" style="max-width: 1024px; width: 93%;" />
     </a>
-
        </div>    
 </div>
-
     </main>
+  
   <script>
     var d = new Date();
     var monthname = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     document.getElementById('date').textContent = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
-  </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "url": "https://portailferforge.github.io/la-ferronnerie-artisanale.html",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://portailferforge.github.io/la-ferronnerie-artisanale.html"
-      },
-      "headline": "La Ferronnerie Artisanale",
-      "alternativeHeadline": "Portail Fer Forge",
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0gFG0cfAzVa3fwvR3Mg6u3BSc2PScM1oqoOU1e2btMibHdX4dbY6N9aE6gYw1U-uikYTxHjo8YfaAUaEztaQA26ENMychZDiWuXrVe6yRfp_phgTTPuErsWsLf5QtpJCd-78c2pMWzEEJM4zhxEXF0tOvNRgbjiqqGNvOdHbPdP0GAeSESu9FUyhl0lWI/s1536/portail-fer-forge-france-4m-ferronnerie-francaise-sur-mesure.webp",
-        "width": 1200,
-        "height": 630
-      },
-      "datePublished": "2025-08-02T21:55:00+01:00",
-      "dateModified": "2025-08-02T21:55:00+01:00",
-      "author": {
-        "@type": "Organization",
-        "name": "La Ferronnerie Artisanale",
-        "url": "https://portailferforge.github.io/"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "La Ferronnerie Artisanale",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0gFG0cfAzVa3fwvR3Mg6u3BSc2PScM1oqoOU1e2btMibHdX4dbY6N9aE6gYw1U-uikYTxHjo8YfaAUaEztaQA26ENMychZDiWuXrVe6yRfp_phgTTPuErsWsLf5QtpJCd-78c2pMWzEEJM4zhxEXF0tOvNRgbjiqqGNvOdHbPdP0GAeSESu9FUyhl0lWI/s1536/portail-fer-forge-france-4m-ferronnerie-francaise-sur-mesure.webp",
-          "width": 600,
-          "height": 314
-        }
-      },
-      "description": "Découvrez Portail Fer Forge, spécialiste de la ferronnerie artisanale. Création sur mesure de portails, rampes et décorations en fer forgé.",
-      "keywords": [
-        "fer forgé",
-        "portail",
-        "artisanat",
-        "grille",
-        "rampe",
-        "décoration"
-      ],
-      "articleSection": "Ferronnerie",
-      "wordCount": 500,
-      "inLanguage": "fr"
-    }
   </script>
   <div class="notif-whatsapp">
     <div class="icon">
@@ -784,23 +696,9 @@ Côté budget, nos fabrications artisanales affichent un excellent rapport quali
     <div class="stripe stripe-green"></div>
     <div class="stripe stripe-white"></div>
   </div>
-  <details>
-    <summary>À propos de nos portails en fer forgé</summary>
-    <div style="text-align:center; padding:15px; background:#f8f8f8; border-top:3px solid #222;">
-      <p style="color:#222;">&#9884;&#65039; Portails en Fer Forgé - Artisanat d’Exception 💎</p>
-      <p style="font-size:16px; color:#444;">🔨 Faits main • <strong>Sur mesure</strong> • Élégance et robustesse</p>
-      <p style="font-size:14px; color:#666;">📍 Disponible en <strong>.....</strong> 🇫🇷 • Livraison sur toute la France et ailleurs</p>
-      <p style="font-size:15px; color:#333; margin-top:10px;">
-        <a href="https://portail-ferforge.blogspot.com/" style="color:#0077cc; font-weight:bold;">Découvrez nos créations uniques</a>
-      </p>
-      <p style="font-size:14px; color:#555; margin-bottom:5px;">📩 <a href="mailto:portail.artisanal@gmail.com" style="color:#cc0000; font-weight:bold;">Contactez-nous</a></p>
-    </div>
-  </details>
   <!-- Pied de page -->
   <footer>
     <p>&#169; 2025 La Ferronnerie Artisanale. Tous droits réservés.</p>
   </footer>
 </body>
 </html>
-
-
