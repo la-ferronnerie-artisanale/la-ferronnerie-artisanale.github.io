@@ -25,6 +25,33 @@
 <link rel="manifest" href="https://la-ferronnerie-artisanale.github.io/realisation-sur-mesure/manifest.json">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <link href='https://cdn.jsdelivr.net/gh/la-ferronnerie-artisanale/mon-style-css/style-github.css' rel='stylesheet'/>
+   <script>
+  (function injectLdSchemasOnce() {
+    if (window.__ldSchemaInjected) return;
+    window.__ldSchemaInjected = true;
+
+    const paths = [
+      "schema",
+      "general-ld",
+      "france",
+      "aquitaine",
+      "portail-4m"
+    ];
+    const base = "https://lively-scene-e83a.portails-ferforge.workers.dev/";
+
+    paths.forEach(path => {
+      fetch(`${base}${path}`)
+        .then(res => res.text())
+        .then(json => {
+          const script = document.createElement("script");
+          script.type = "application/ld+json";
+          script.textContent = json.trim();
+          document.head.appendChild(script);
+        })
+        .catch(err => console.error(`❌ Erreur JSON [${path}] :`, err));
+    });
+  })();
+  </script>
 </head>
 <body>
   <!-- Bandeau réseaux sociaux -->
@@ -90,33 +117,7 @@
 <script>
   document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("selectnav1"),t=document.getElementById("menu-toggle"),n=document.getElementById("navmenu");e&&e.addEventListener("change",function(){var e=this.value.trim();e&&e!=="#"&&(window.location.href=e)});t&&n?t.addEventListener("click",function(){n.classList.toggle("active")}):console.warn("menu-toggle ou navmenu introuvable ! Vérifie l'ID dans ton HTML.")});
 </script>
-    <script>
-(function injectLdSchemasOnce() {
-  if (window.__ldSchemaInjected) return;
-  window.__ldSchemaInjected = true;
 
-  const paths = [
-    "schema",
-    "general-ld",
-    "france",
-    "aquitaine",
-    "portail-4m"
-  ];
-  const base = "https://lively-scene-e83a.portails-ferforge.workers.dev/";
-
-  paths.forEach(path => {
-    fetch(`${base}${path}`)
-      .then(res => res.text())
-      .then(json => {
-        const script = document.createElement("script");
-        script.type = "application/ld+json";
-        script.textContent = json.trim();
-        document.head.appendChild(script);
-      })
-      .catch(err => console.error(`❌ Erreur JSON [${path}] :`, err));
-  });
-})();
-</script>
 
   <!-- Contenu principal exemple -->
   <main>
@@ -772,6 +773,7 @@ Côté budget, nos fabrications artisanales affichent un excellent rapport quali
 
 </body>
 </html>
+
 
 
 
