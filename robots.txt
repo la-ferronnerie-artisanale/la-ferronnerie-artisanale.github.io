@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://portailferforge.github.io/portailferforge/sitemap.xml
+Sitemap: https://la-ferronnerie-artisanale.github.io//sitemap.xml
+
